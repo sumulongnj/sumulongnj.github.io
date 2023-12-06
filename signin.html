@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="signin_styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <div class="signin-box">
+        <img src="logo.png" alt="Scholar's Guide Logo">
+        <p class="logo-text">Scholar's Guide</p>
+        <h2>Sign in to our platform</h2>
+        <form action="#">
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+
+          <div class="remember-forgot">
+            <label for="remember">
+              <input type="checkbox" id="remember" name="remember"> Remember me
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">Let's learn</button>
+          <script>
+            document.getElementById('submitBtn').addEventListener('click', function() {
+                window.location.href = 'dashboard.html'; 
+            });
+          </script>
+        </form>
+
+        <p>Not registered? <a href="signup.html">Create account</a></p>
+      </div>
+    </div>
+    <div class="right-side">
+      <img src="image.png" alt="Image">
+    </div>
+  </div>
+</body>
+</html>

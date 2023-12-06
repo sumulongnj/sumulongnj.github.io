@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup_styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="signup-box">
+      <div class="logo-container">
+        <img src="logo.png" alt="Scholar's Guide Logo">
+        <p class="logo-text">Scholar's Guide</p>
+      </div>
+      <h2>Create your account with us</h2>
+      <form action="#">
+        <div class="form-section">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-section">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-section">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-section">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+
+        <div class="form-section">
+            <label>
+              <input type="checkbox" id="acceptTerms" required>
+              <span>I accept the Terms and Conditions</span>
+            </label>
+        </div>
+
+        <div class="form-section">
+            <button type="submit" class="submit-btn" id="submitBtn">Let's learn</button>
+            <script>
+              document.getElementById('submitBtn').addEventListener('click', function() {
+                  window.location.href = 'dashboard.html'; 
+              });
+            </script>
+        </div>
+      </form>
+
+      <div class="form-section">
+        <p>Already have an account? <a href="signin.html">Sign in</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the container height to full viewport height */
+  }
+  
+  .center-box {
+    width: 80%; /* Adjust the width of the box as needed */
+    text-align: center;
+  }
+  
+  .signup-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-side {
+    width: 45%;
+  }
+  
+  .signin-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signin-box img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .signin-box h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .signin-box form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .signin-box form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .submit-btn {
+    background-color: maroon;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .right-side {
+    width: 50%;
+  }
+  
+  .right-side img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }  
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-container img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
