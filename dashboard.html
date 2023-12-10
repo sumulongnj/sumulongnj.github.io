@@ -96,7 +96,12 @@
                                 <p>10/10</p>
                             </div>
                         </div>
-                        <!-- Add more activities -->
+                        <button type="submit" class="submit-btn" id="submitBtn">Generate Progress Report</button>
+                        <script>
+                            document.getElementById('submitBtn').addEventListener('click', function () {
+                                window.location.href = 'progress_report.html';
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -141,10 +146,8 @@
                         <p>Vocabulary, synonyms and antonyms, spelling, correct usage and grammar.</p>
                     </div>
                 </div>
-                <!-- Add more subject boxes -->
             </div>
         </div>
-        <!-- Rest of your dashboard content -->
     </div>
 
 </body>

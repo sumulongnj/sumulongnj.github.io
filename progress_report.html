@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="progress_report_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="left-section">
+            <div class="logo-container">
+                <a href="dashboard.html">
+                    <img src="assets/logo.png" alt="Scholar's Guide Logo">
+                </a>
+                <p class="logo-text">Scholar's Guide</p>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="Quick search for anything">
+            </div>
+        </div>
+        <div class="center-section">
+            <div class="options">
+                <a href="learning.html">
+                    <span>Learning Mode</span>
+                </a>
+                <div class="bar"></div>
+                <a href="quiz.html">
+                    <span>Quiz Mode</span>
+                </a>
+                <div class="bar"></div>
+                <a href="upload.html">
+                    <span>Quiz Upload</span>
+                </a>
+                <div class="bar"></div>
+                <a href="rankings.html">
+                    <span>Rankings (Get CET students)</span>
+                </a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="user-profile">
+                <!-- Placeholder for user's picture -->
+            </div>
+        </div>
+    </header>
+
+    <header>
+        <h1>Student Progress Report</h1>
+        <p>Student Name: John Doe</p>
+        <p>Class: Get CET</p>
+        <p>Date: December 10, 2023 </p>
+    </header>
+
+    <section class="grades">
+        <h2>Grades</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reading Comprehension</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>Language Proficiency</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="logged-hours">
+        <h2>Logged Hours</h2>
+        <p>Over the last 30 days: 45 hours</p>
+        <p>Over the last 7 days: 8 hours</p>
+    </section>
+
+    <section class="score-statistics">
+        <h2>Score Statistics</h2>
+        <canvas id="scoreChart" width="400" height="200"></canvas>
+        <script>
+            const scoreData = {
+                labels: ['Reading Comprehension', 'Mathematics', 'Science', 'Language Proficiency'],
+                datasets: [{
+                    label: 'Subject Scores',
+                    data: [6, 10, 2, 10],
+                    backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)'],
+                    borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)'],
+                    borderWidth: 1
+                }]
+            };
+
+            const ctx = document.getElementById('scoreChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: scoreData,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+    </section>
+
+    <footer>
+        <p>Updated on: December 10, 2023</p>
+    </footer>
+</body>
+
+</html>

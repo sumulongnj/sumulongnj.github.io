@@ -1,4 +1,3 @@
-/* Reset default browser styles */
 body,
 h1,
 h2,
@@ -14,7 +13,9 @@ ol {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 .navbar {
@@ -84,9 +85,7 @@ body {
 .content {
   display: flex;
   height: calc(100vh - 60px);
-  /* Adjust the height as per your header's height */
   padding: 0 20px;
-  /* Add padding to the content container */
 }
 
 .left-side {
@@ -94,18 +93,15 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
-  /* Add margin to the right side of the left-side content */
 }
 
 .right-side {
   flex: 1;
-  /* Adjust the flex property */
   padding: 20px;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   overflow-y: auto;
-  /* Enable vertical scroll if needed */
 }
 
 .top-left {
@@ -120,9 +116,7 @@ body {
   height: 70%;
   display: flex;
   flex-wrap: wrap;
-  /* Allow columns to wrap */
   margin-right: -10px;
-  /* Compensate for the margin on the last column */
 }
 
 .column {
@@ -134,7 +128,6 @@ body {
 
 .column:last-child {
   margin-right: 0;
-  /* Remove margin from the last column */
 }
 
 .user-profile {
@@ -180,10 +173,8 @@ body {
 .activity-divider {
   border: none;
   border-top: 1px solid #ccc;
-  /* Subtle horizontal line */
   margin: 0;
   width: 100%;
-  /* Ensures the line spans the entire width */
 }
 
 .subject-boxes {
@@ -195,9 +186,7 @@ body {
 
 .subject-box {
   width: calc(25% - 20px);
-  /* Four boxes in a row with a small gap */
   margin-right: 20px;
-  /* Space between the boxes */
   margin-bottom: 20px;
   margin-top: 129px;
   background-color: maroon;
@@ -208,24 +197,19 @@ body {
 
 .subject-box:last-child {
   margin-right: 0;
-  /* Remove margin from the last box */
 }
 
 .subject-image {
   width: 100%;
-  /* Placeholder styles for the image container */
 }
 
 .subject-image img {
   width: 100%;
-  /* Placeholder styles for the image */
 }
 
 .subject-details {
   width: 100%;
-  /* Adjust as needed */
   padding-left: 10px;
-  /* Small space between image and details */
 }
 
 .subject-details h3 {
@@ -235,4 +219,14 @@ body {
 .subject-details p {
   font-size: 14px;
   margin-top: 20px;
+}
+
+.submit-btn {
+  background-color: maroon;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }

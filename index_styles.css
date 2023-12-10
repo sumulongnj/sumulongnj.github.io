@@ -1,8 +1,21 @@
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 .container {
@@ -10,12 +23,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* Set the container height to full viewport height */
 }
 
 .center-box {
   width: 80%;
-  /* Adjust the width of the box as needed */
   text-align: center;
 }
 
