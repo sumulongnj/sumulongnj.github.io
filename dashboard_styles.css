@@ -104,6 +104,15 @@ body {
   overflow-y: auto;
 }
 
+.right-side h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .top-left {
   height: 30%;
   display: flex;
@@ -188,7 +197,7 @@ body {
   width: calc(25% - 20px);
   margin-right: 20px;
   margin-bottom: 20px;
-  margin-top: 129px;
+  margin-top: 88px;
   background-color: maroon;
   color: #fff;
   padding: 20px;

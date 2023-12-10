@@ -114,3 +114,8 @@ body {
   font-weight: bold;
   margin: 0;
 }
+
+.remember-forgot div {
+  display: flex;
+  align-items: center;
+}
