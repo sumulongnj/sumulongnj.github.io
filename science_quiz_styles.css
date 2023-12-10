@@ -144,3 +144,55 @@ body {
     font-size: 24px;
     margin: 0 auto 0px;
 }
+
+.quiz-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.quiz-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.quiz-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.quiz-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.choices {
+    list-style: none;
+    padding: 0;
+}
+
+.choices li {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.choices li:hover {
+    background-color: #f0f0f0;
+}
+
+.submit-btn {
+    background-color: maroon;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -98,6 +98,7 @@ body {
     background-color: maroon;
     margin-bottom: 10px;
     overflow: hidden;
+    align-self: center;
 }
 
 .content {
@@ -117,13 +118,6 @@ body {
     width: 60%;
 }
 
-/* User Profile and Timer Box Styling */
-.timer-box {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
-
 .user-name {
     font-weight: bold;
     margin: 0;
@@ -134,13 +128,77 @@ body {
     color: #666;
 }
 
-/* Timer Styling */
-.timer-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #ccc;
-    line-height: 100px;
+.quiz-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.quiz-container h2 {
     font-size: 24px;
-    margin: 0 auto 0px;
+    margin-bottom: 20px;
+}
+
+.quiz-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.quiz-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.choices {
+    list-style: none;
+    padding: 0;
+}
+
+.choices li {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.correct {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green;
+}
+
+.wrong {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.score-box {
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.score-box h3 {
+    margin-top: 0;
+}
+
+.score-box p {
+    font-size: 24px;
+    margin: 15px 0;
+    font-weight: bold;
 }

@@ -14,7 +14,9 @@ ol {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 /* Header styles */
@@ -91,76 +93,62 @@ body {
     overflow: hidden;
 }
 
-.content {
-    display: flex;
-    height: calc(100vh - 60px);
-    /* Adjust the height as per your header's height */
-    padding: 0 20px;
-    /* Add padding to the content container */
-}
-
-.ranking-section {
-    margin-bottom: 40px;
-    margin-top: 20px;
-    margin-left: 300px;
+.rankings {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
 
-.rankings-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Two columns */
-    gap: 20px;
-    /* Gap between grid items */
-    margin-top: 50px;
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: maroon;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.subject-ranking {
-    border: 1px solid #ccc;
-    padding: 15px;
-    background-color: maroon;
-    border-radius: 8px;
+.subject-rankings {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.subject-ranking h3 {
+.subject {
+    flex-basis: calc(25% - 20px);
+    /* Adjust width and margin as needed */
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid maroon;
+}
+
+.subject h2 {
+    margin-top: 0;
     margin-bottom: 10px;
-    font-size: 18px;
-    color: whitesmoke;
+    font-size: 19px;
+    color: green;
+    /* Green color for subject titles */
 }
 
-.subject-ranking ol {
+.top-students {
     list-style: none;
     padding-left: 0;
-    color: whitesmoke;
 }
 
-.subject-ranking li {
+.top-students li {
     margin-bottom: 8px;
-    font-size: 16px;
+    color: #666;
+    font-size: 15px;
+    transition: color 0.3s ease;
 }
 
-.subject-ranking li span {
-    font-weight: bold;
-}
-
-/* Additional styles for rankings page */
-.page-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.back-link {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.user-profile {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: maroon;
-    margin-bottom: 10px;
-    overflow: hidden;
+.top-students li:hover {
+    color: #333;
+    cursor: pointer;
 }

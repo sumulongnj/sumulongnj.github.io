@@ -59,7 +59,126 @@
         </div>
 
         <div class="center-section">
+            <div class="quiz-container">
+                <h2>Science Quiz</h2>
+                <div class="quiz-box">
+                    <h3>Question 1: What is the largest planet in our solar system?</h3>
+                    <ul class="choices">
+                        <li onclick="selectAnswer(this)">Mars</li>
+                        <li onclick="selectAnswer(this)">Jupiter</li>
+                        <li onclick="selectAnswer(this)">Earth</li>
+                        <li onclick="selectAnswer(this)">Saturn</li>
+                    </ul>
+                </div>
 
+                <div class="quiz-box">
+                    <h3>Question 2: What is the powerhouse of the cell?</h3>
+                    <ul class="choices">
+                        <li onclick="selectAnswer(this)">Nucleus</li>
+                        <li onclick="selectAnswer(this)">Ribosome</li>
+                        <li onclick="selectAnswer(this)">Mitochondrion</li>
+                        <li onclick="selectAnswer(this)">Chloroplast</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 3: What causes the Earth's seasons?</h3>
+                    <ul class="choices">
+                        <li onclick="selectAnswer(this)">Distance from the Sun</li>
+                        <li onclick="selectAnswer(this)">Tilt of the Earth's axis</li>
+                        <li onclick="selectAnswer(this)">Gravitational pull</li>
+                        <li onclick="selectAnswer(this)">Earth's rotation speed</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 3: What is the powerhouse of the cell?</h3>
+                    <ul class="choices" id="choices3">
+                        <li onclick="selectAnswer(this)">Chloroplast</li>
+                        <li onclick="selectAnswer(this)">Nucleus</li>
+                        <li onclick="selectAnswer(this)">Mitochondria</li>
+                        <li onclick="selectAnswer(this)">Ribosome</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 4: What causes tides in the Earth's oceans?</h3>
+                    <ul class="choices" id="choices4">
+                        <li onclick="selectAnswer(this)">Gravitational pull of the sun</li>
+                        <li onclick="selectAnswer(this)">Gravitational pull of the moon</li>
+                        <li onclick="selectAnswer(this)">Gravitational pull of the planets</li>
+                        <li onclick="selectAnswer(this)">Winds</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 5: Which gas is most abundant in the Earth's atmosphere?</h3>
+                    <ul class="choices" id="choices5">
+                        <li onclick="selectAnswer(this)">Oxygen</li>
+                        <li onclick="selectAnswer(this)">Carbon dioxide</li>
+                        <li onclick="selectAnswer(this)">Nitrogen</li>
+                        <li onclick="selectAnswer(this)">Hydrogen</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 6: What is the chemical symbol for gold?</h3>
+                    <ul class="choices" id="choices6">
+                        <li onclick="selectAnswer(this)">Ag</li>
+                        <li onclick="selectAnswer(this)">Au</li>
+                        <li onclick="selectAnswer(this)">G</li>
+                        <li onclick="selectAnswer(this)">Go</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 7: What is the process by which plants make their own food?</h3>
+                    <ul class="choices" id="choices7">
+                        <li onclick="selectAnswer(this)">Photosynthesis</li>
+                        <li onclick="selectAnswer(this)">Respiration</li>
+                        <li onclick="selectAnswer(this)">Transpiration</li>
+                        <li onclick="selectAnswer(this)">Metabolism</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 8: Which planet is known as the "Red Planet"?</h3>
+                    <ul class="choices" id="choices8">
+                        <li onclick="selectAnswer(this)">Venus</li>
+                        <li onclick="selectAnswer(this)">Mars</li>
+                        <li onclick="selectAnswer(this)">Mercury</li>
+                        <li onclick="selectAnswer(this)">Jupiter</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 9: What is the chemical formula for water?</h3>
+                    <ul class="choices" id="choices9">
+                        <li onclick="selectAnswer(this)">HO</li>
+                        <li onclick="selectAnswer(this)">H2O</li>
+                        <li onclick="selectAnswer(this)">CO2</li>
+                        <li onclick="selectAnswer(this)">H3O+</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-box">
+                    <h3>Question 10: What causes the Earth's seasons?</h3>
+                    <ul class="choices" id="choices10">
+                        <li onclick="selectAnswer(this)">The tilt of the Earth's axis</li>
+                        <li onclick="selectAnswer(this)">Changing distance from the sun</li>
+                        <li onclick="selectAnswer(this)">Rotation speed</li>
+                        <li onclick="selectAnswer(this)">Atmospheric pressure</li>
+                    </ul>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+                <script>
+                    document.getElementById('submitBtn').addEventListener('click', function () {
+                        window.location.href = 'science_results.html';
+                    });
+                </script>
+
+            </div>
         </div>
 
         <div class="right-side">
@@ -72,16 +191,14 @@
 
     <script>
         let timer;
-        let timeInSeconds = 600; // Initial time in seconds (e.g., 10 minutes)
+        let timeInSeconds = 60;
 
         function startTimer() {
             const timerDisplay = document.getElementById('timer');
 
-            // Convert total seconds to minutes and seconds
             const minutes = Math.floor(timeInSeconds / 60);
             let seconds = timeInSeconds % 60;
 
-            // Display initial time
             timerDisplay.textContent = formatTime(minutes) + ':' + formatTime(seconds);
 
             timer = setInterval(() => {
@@ -90,20 +207,27 @@
                 const minutes = Math.floor(timeInSeconds / 60);
                 seconds = timeInSeconds % 60;
 
-                // Update the timer display
                 timerDisplay.textContent = formatTime(minutes) + ':' + formatTime(seconds);
 
-                // Stop the timer when it reaches zero
                 if (timeInSeconds <= 0) {
                     clearInterval(timer);
                     timerDisplay.textContent = 'Time\'s up!';
                 }
-            }, 1000); // Update every second (1000 milliseconds)
+            }, 1000);
         }
 
-        // Function to format time values to display as two digits (e.g., 05 instead of 5)
         function formatTime(time) {
             return time < 10 ? '0' + time : time;
+        }
+
+        function selectAnswer(choice) {
+            const choices = choice.parentNode.children;
+
+            for (let i = 0; i < choices.length; i++) {
+                choices[i].style.backgroundColor = '#fff';
+            }
+
+            choice.style.backgroundColor = 'gray';
         }
     </script>
 </body>

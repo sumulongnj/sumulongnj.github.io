@@ -14,7 +14,9 @@ ol {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 /* Header styles */
@@ -159,7 +161,7 @@ body {
 
 /* Quiz box styles */
 .quiz-box {
-    border: 1px solid #ccc;
+    border: 3px solid maroon;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
@@ -176,8 +178,8 @@ body {
 }
 
 .quiz-btn {
-    border: 2px solid green;
-    color: green;
+    border: 2px solid maroon;
+    color: maroon;
     background-color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -186,5 +188,5 @@ body {
 
 .quiz-btn:hover {
     color: white;
-    background-color: green;
+    background-color: maroon;
 }
