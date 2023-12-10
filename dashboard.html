@@ -133,6 +133,17 @@
                         <img src="assets/subject3.png">
                     </div>
                     <div class="subject-details">
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                var subjectBoxes = document.querySelectorAll(".subject-box");
+
+                                subjectBoxes.forEach(function (box) {
+                                    box.addEventListener("click", function () {
+                                        window.location.href = "threads.html"; // Redirect to threads.html
+                                    });
+                                });
+                            });
+                        </script>
                         <h3>Science</h3>
                         <p>Earth science and basic astronomy, biology, basic chemistry, and basic physics</p>
                     </div>
@@ -149,7 +160,7 @@
             </div>
         </div>
     </div>
-
 </body>
+
 
 </html>

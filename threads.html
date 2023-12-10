@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankings</title>
+    <link rel="stylesheet" href="threads_styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="left-section">
+            <div class="logo-container">
+                <a href="dashboard.html">
+                    <img src="assets/logo.png" alt="Scholar's Guide Logo">
+                </a>
+                <p class="logo-text">Scholar's Guide</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Quick search for anything">
+            </div>
+        </div>
+        <div class="center-section">
+            <div class="options">
+                <a href="learning.html">
+                    <span>Learning Mode</span>
+                </a>
+                <div class="bar"></div>
+                <a href="quiz.html">
+                    <span>Quiz Mode</span>
+                </a>
+                <div class="bar"></div>
+                <a href="upload.html">
+                    <span>Quiz Upload</span>
+                </a>
+                <div class="bar"></div>
+                <a href="rankings.html">
+                    <span>Rankings (Get CET students)</span>
+                </a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="user-profile">
+                <!-- Placeholder for user's picture -->
+            </div>
+        </div>
+    </header>
+
+    <div class="question-container">
+        <h1>Science Thread</h1>
+        <div class="question-box">
+            <h3>Question 1: What is love?</h3>
+            <ul class="choices">
+                <li>Ikaw</li>
+                <li class="correct">Engg 150</li>
+                <li>Siya</li>
+                <li>Ako</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="add-comment-section">
+        <h2>Add a Comment</h2>
+        <textarea id="commentTextArea" rows="4" placeholder="Type your comment here..."></textarea>
+        <button id="submitComment">Comment</button>
+    </div>
+
+    <div class="comment-container">
+        <div class="comment-box">
+            <div class="comment-details">
+                <div class="user-profile-jane">
+                    <!-- Placeholder for user's picture -->
+                </div>
+                <div class="comment-info">
+                    <span class="comment-author">Jane Doe</span>
+                    <span class="comment-time">2 days ago</span>
+                </div>
+                <button class="reply-btn">Reply</button>
+            </div>
+            <p class="comment-content">Tama!</p>
+        </div>
+    </div>
+
+    <a class="next-btn">Next Question</a>
+
+    <div id="replyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <textarea id="replyTextArea" rows="4" placeholder="Type your reply here..."></textarea>
+            <button id="submitReply">Submit</button>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var modal = document.getElementById("replyModal");
+    var replyBtn = document.getElementsByClassName("reply-btn")[0];
+    var closeBtn = document.getElementsByClassName("close")[0];
+    var submitReplyBtn = document.getElementById("submitReply");
+
+    replyBtn.onclick = function () {
+        modal.style.display = "block";
+    };
+
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    submitReplyBtn.onclick = function () {
+        // Redirect to reply.html
+        window.location.href = "reply.html"; // Change "reply.html" to your desired URL
+    };
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+
+</script>
+
+</html>
