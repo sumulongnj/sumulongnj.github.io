@@ -17,7 +17,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header styles */
 .navbar {
     display: flex;
     align-items: center;
@@ -89,71 +88,6 @@ body {
     border-radius: 50%;
     background-color: #ccc;
     overflow: hidden;
-}
-
-.content {
-    display: flex;
-    height: calc(100vh - 60px);
-    /* Adjust the height as per your header's height */
-    padding: 0 20px;
-    /* Add padding to the content container */
-}
-
-.ranking-section {
-    margin-bottom: 40px;
-    margin-top: 20px;
-    margin-left: 300px;
-    text-align: center;
-}
-
-.rankings-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Two columns */
-    gap: 20px;
-    /* Gap between grid items */
-    margin-top: 50px;
-}
-
-.subject-ranking {
-    border: 1px solid #ccc;
-    padding: 15px;
-    background-color: maroon;
-    border-radius: 8px;
-}
-
-.subject-ranking h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: whitesmoke;
-}
-
-.subject-ranking ol {
-    list-style: none;
-    padding-left: 0;
-    color: whitesmoke;
-}
-
-.subject-ranking li {
-    margin-bottom: 8px;
-    font-size: 16px;
-}
-
-.subject-ranking li span {
-    font-weight: bold;
-}
-
-/* Additional styles for rankings page */
-.page-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.back-link {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
 }
 
 .user-profile {
